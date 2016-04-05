@@ -6,6 +6,7 @@ E-mail:     chen.shi@alcatel-lucent.com
 
 History:
             v0.1    2016-03-17    SHI, Chen    init version
+            v0-2    2016-04-05    SHI, Chen    [fea001] support getting RTDB insert trace 
 
 '''
 
@@ -16,6 +17,7 @@ import re
 my_trace_pattern_list = [
                          'TRACE:\s+diameter!credit_control_request_received',
                          'TRACE:.*_RTDB!read\(',
+                         'TRACE:.*_RTDB!insert\(',
                          'TRACE:.*_RTDB!delete\(',
                          'TRACE:.*_RTDB!update\(',
                          'TRACE:.*_RTDB!search\(',
